@@ -19,7 +19,9 @@ button:hover {
 .element {
     border-radius: 4px;
     display: inline-flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    margin: 5px;
+    text-align: center;
+    margin: 5px 5px 5px 0;
+    font-family: sans-serif;
 }

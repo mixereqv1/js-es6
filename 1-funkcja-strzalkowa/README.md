@@ -59,11 +59,14 @@ Mamy kod:
 const ob = {
     counter : 0,
     showText: function() {
-        setInterval(function() {
+        const interval = setInterval(function() {
             counter++;
             const tekst = "Dzisiaj zjadłem " + this.counter + " placków!";
             console.log(tekst);
-        }, 500)
+            if (this.counter >= 5) {
+                clearInterval(interval);
+            }
+        }, 100)
     }
 }
 
