@@ -6,12 +6,13 @@
 Stwórz klasę Brick, która będzie opisywać pojedynczy klocek w Arkanoid.
 
 Niech ma:
-- właściwości `x`, `y`
-- właściwość `graphic`
-- właściwości `width`, `height`
-- właściwość `type`
-- właściwość `live`
-- metodę `print`, która wypisze powyższe detale.
+- właściwości `x`, `y` podawane przy tworzeniu obiektu
+- właściwość `graphic` ustawioną na null
+- właściwości `width`, `height` ustawione na 100x60
+- właściwość `type` ustawioną na "static"
+- właściwość `live` ustawioną na 0
+
+- metodę `render`, która wypisze wszystkie powyższe detale.
 - metodę `init`, która wypisze w konsoli "Dodano na planszę"
 
 
@@ -35,8 +36,12 @@ BrickGreen powinien mieć:
 
 ## Zadanie 3
 Stwórz klasę BrickAnim, która będzie dziedziczyć po klasie Brick.
-Klasa ta powinna mieć metodę moveHorizontal, która będzie wypisywać w konsoli
-`poruszam się poziomo z szybkością ...`.
-W miejsce kropek wstaw właściwość speed, którą będzie miała ta klasa.
+Klasa ta powinna mieć:
+- właściwości takie jak Brick
+- właściwość animated ustawioną na "sprite.png"
+- właściwość type ustawioną na "animated"
+- właściwość live ustawioną na 10
+
+- metodę render(), która będzie wypisywać w konsoli `animuję!` a następnie wykona kod z metody render() znajdującej się w klasie Brick.
 
 Stwórz kilka obiektów na bazie powyższych klas. Zainicjuj im metody init() i print().
