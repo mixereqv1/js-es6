@@ -24,4 +24,7 @@ button:hover {
     text-align: center;
     margin: 5px 5px 5px 0;
     font-family: sans-serif;
+    height: 100px;
+    width: 100px;
+    color: #fff;
 }
